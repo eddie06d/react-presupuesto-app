@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import { AppRouter } from './AppRouter';
+import { PresupuestoContext } from './providers/PresupuestoContext';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export const App = () => {
+    const [presupuesto, setPresupuesto] = useState('');
+
+    return (
+        <PresupuestoContext.Provider value={ {
+            presupuesto, 
+            setPresupuesto
+        } }>
+            <AppRouter />
+        </PresupuestoContext.Provider>
+    )
 }
-
-export default App;

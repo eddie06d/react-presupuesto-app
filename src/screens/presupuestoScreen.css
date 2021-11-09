@@ -1,0 +1,53 @@
+.contenido{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 20px;
+    border-radius: 15px;
+ }
+ label {
+   font-weight: 600;
+ }
+ .card {
+   border: none;
+ }
+ .card-header {
+   background-color: white;
+ }
+ .presupuesto {
+   background-color: lightseagreen;
+   margin-right: 10px;
+   padding: 12px;
+   border-radius: 5px;
+ }
+ .restante {
+   margin-left: 10px;
+   padding: 12px;
+   border-radius: 5px;
+ }
+ .presupuesto > span, .restante > span {
+   font-weight: 700;
+   font-size: 17px;
+ }
+ .descripcion {
+   font-weight: 700;
+ }
+ .badge {
+   font-size: 16px;
+   text-transform: uppercase;
+ }
+ .bueno {
+   background-color: lightgray;
+ }
+ .regular {
+   background-color: gold;
+ }
+ .malo {
+   background-color: tomato;
+ }
+ .delete {
+   margin-left: 10px;
+   cursor: pointer;
+ }
+ 
